@@ -1,0 +1,585 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    color:#311F09;
+    font-size: calc(60px + (80 - 60) * ((100vw - 375px) / (1280 - 375)));
+    font-weight: 700;
+    max-width: 288px;
+    line-height: 110%;
+    margin-top: calc(16px + (23 - 16) * ((100vw - 375px) / (1280 - 375)));
+    margin-bottom: calc(15px + (30 - 15) * ((100vw - 375px) / (1280 - 375)));
+}
+
+h2 {
+    font-family: 'Tinos', sans-serif;
+    font-size: calc(60px + (80 - 60) * ((100vw - 375px) / (1280 - 375)));
+    font-weight: 700;
+    line-height: 110%;
+}
+
+p { 
+    font-family: 'Poppins', sans-serif;
+    font-size: calc(12px + (20 - 12) * ((100vw - 375px) / (1280 - 375)));
+    line-height: 200%;
+}
+
+h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: calc(12px + (30 - 12) * ((100vw - 375px) / (1280 - 375)));
+    font-weight: 600;
+    line-height: 200%;
+}
+
+button {
+    width: 232px;
+    height: 74px;
+    border-radius: 163px;
+    border: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: calc(12px + (20 - 12) * ((100vw - 375px) / (1280 - 375)));
+    line-height: 200%;
+}
+
+.homePage {
+    padding: calc(25px + (51 - 25) * ((100vw - 375px) / (1280 - 375))) calc(37px + (51 - 37) * ((100vw - 375px) / (1280 - 375))) calc(32px + (155 - 32) * ((100vw - 375px) / (1280 - 375))) calc(10px + (151 - 10) * ((100vw - 375px) / (1280 - 375)));
+}
+
+.menu {
+    display: flex;
+    margin: 67px 80px 180px 99px;
+}
+
+.infoSide p {
+    width: 523px;
+    color:#5C4529;
+    margin-bottom: calc(39px + (77 - 39) * ((100vw - 375px) / (1280 - 375)));
+}
+
+.infoSide span {
+    font-family: Raleway;
+    font-size: calc(12px + (18 - 12) * ((100vw - 375px) / (1280 - 375)));
+    line-height: 110%;
+    color: #FF8A00;
+    background-color: rgba(255, 138, 0, 0.2);
+    border-radius: 126px;
+    padding: calc(6px + (10 - 6) * ((100vw - 375px) / (1280 - 375))) calc(18px + (34 - 18) * ((100vw - 375px) / (1280 - 375)));
+}
+
+.navbar {
+    display: flex;
+    position: sticky;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.circle {
+    width: 40px;
+    height: 40px;
+    background-color: orange;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    margin-right: 10px; 
+}
+
+.brand-name {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #4A3F35; 
+}
+
+.highlight {
+    color: orange;
+}
+
+
+.navList {
+    display: flex;
+    gap: 45px;
+    list-style-type: none;
+}
+
+.active {
+    color:#FF8A00;
+}
+
+li {
+    display: inline;
+    color:#311F09;
+}
+
+.cart {
+    position: relative;
+    display: flex;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color:  rgba(208, 204, 199, 0.1); 
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 38px 0px 93px;
+}
+
+.cart img {
+    width: 24px;
+    height: 24px;
+    padding: 10px;
+}
+
+.cart p {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 16px;
+    height: 16px;
+    background-color:#FF3838;
+    border-radius: 50%;
+    padding: 2.5px;
+    font-size: 8px;
+    font-weight: 500;
+    line-height: 12px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logIn .green {
+    width: 112px;
+    height: 50px;
+    border-radius: 133px;
+    font-size: 14px;
+}
+
+.cuisine {
+    display: flex;
+    gap: 2px;
+    flex-wrap: wrap;
+}
+
+.cuisine > div {
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+.order {
+    display: flex;
+    gap: calc(20px + (23 - 20) * ((100vw - 375px) / (1280 - 375)));
+}
+
+.orange {
+    background: #FF8A00;
+}
+
+.green {
+    background: #3FA72F;
+}
+
+.imgSide img {
+    width: 500px;
+    height: 600px;
+}
+
+/* ЭКРАН ВТОРОЙ  */
+
+.greenPage {
+    padding: 188px 121px 132px 43px;
+    background-color: rgba(63, 198, 110, 0.1);
+}
+
+.welcome {
+    display: flex;
+}
+
+.welcome > div {
+    flex-basis: 1;
+    flex-grow: 1;
+}
+
+.welcomeText h2 {
+    width:408px;
+}
+
+/* ЭКРАН ТРЕТИЙ  */
+
+.menuList h2 {
+    text-align: center;
+    margin-top: 165px;
+}
+
+.categories {
+    display: flex;
+    gap: 27.5px;
+    margin: 60px;
+    justify-content: center;
+}
+
+.category.active {
+    background-color:#311F09;
+    color:#FFFFFF;
+}
+
+.category {
+    background-color: rgba(208, 204, 199, 0.1);
+    border: none;
+    border-radius: 162px;
+    color:#311F09;
+
+}
+
+.meals {
+    display: flex;
+    gap: 40px;
+}
+
+.price {
+    display: flex;
+    gap: 34px;
+}
+
+/*.swiper {
+    width: 600px;
+    height: 300px;
+  }
+
+*/ 
+
+.dish {
+    border: none;
+    background-color: rgba(208, 204, 199, 0.1);
+    width: 344px;
+    border-radius: 70px;
+    text-align: center;
+}
+
+.dish img {
+    max-width: 270px;
+    height: 270px;
+}
+
+.dish p {
+    font-size: 14px;
+    line-height: 28px;
+    color:#59442B;
+    margin: 15px 30px 30px;
+}
+
+.ratings {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 5px 15px;
+}
+
+.star {
+    background: none;
+    padding: 0;
+    border: none;
+    border-radius: 2px;
+}
+
+.price p {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 37.5px;
+    color: #000000;
+    margin: 38px 34px 43px 36px;
+}
+
+.price.orange {
+    width: 158px;
+    height: 55px;
+    font-size: 16px;
+    padding: 11px 36px;
+}
+
+/* ЭКРАН ЧЕТВЁРТЫЙ  */
+
+.reservation {
+    display: flex;
+    background-color:  rgba(255, 244, 231, 0.4);
+    margin-top: 201px;
+    align-items: center;
+}
+
+.reservationImg {
+    width: 882px;
+    height: 883px;
+}
+
+/* ЭКРАН ПЯТЫЙ  */
+
+.chefInfo {
+    margin-top: 175px;
+    text-align: center;
+}
+
+.chefInfo h2 {
+    margin-bottom: 135px;
+}
+
+.chefPhoto {
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+.chefPhoto > div {
+    border: none;
+    border-radius: 50px;
+    width: 344px;
+    height: 549px;
+}
+
+.chefB {
+    background-color:rgba(27, 22, 29, 0.2);
+}
+
+.chefF {
+    background-color:rgba(255, 138, 0, 0.2);
+}
+
+.chefI {
+    background-color:rgba(157, 101, 66, 0.2);
+}
+
+.chefInfo .orange {
+    margin-top: 150px;
+}
+
+/* ЭКРАН ШЕСТОЙ  */
+
+.citation {
+    display: flex;
+}
+
+.peoplePhoto {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    padding-top: 50px;
+    gap: 30px; 
+    transform: scaleY(-1); 
+}
+
+.peoplePhoto img {
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+    position: relative;
+    transform: scaleY(-1);
+}
+
+.peoplePhoto img:nth-child(4) {
+    width: 160px;
+    height: 160px;
+    z-index: 2;
+    border: 5px solid rgba(255, 165, 0, 0.4);
+    box-shadow: 0 0 15px rgba(255, 165, 0, 0.5);
+}
+
+.peoplePhoto img:nth-child(3),
+.peoplePhoto img:nth-child(5) {
+    width: 120px;
+    height: 120px;
+    z-index: 1;
+}
+
+.peoplePhoto img:nth-child(2),
+.peoplePhoto img:nth-child(6) {
+    width: 100px;
+    height: 100px;
+}
+
+.peoplePhoto img:nth-child(1),
+.peoplePhoto img:nth-child(7) {
+    width: 80px;
+    height: 80px;
+}
+
+.peoplePhoto img:nth-child(1) {
+    transform: translateY(40px) scaleY(-1);
+}
+.peoplePhoto img:nth-child(2) {
+    transform: translateY(25px) scaleY(-1); 
+}
+.peoplePhoto img:nth-child(3) {
+    transform: translateY(10px) scaleY(-1);
+}
+.peoplePhoto img:nth-child(5) {
+    transform: translateY(10px) scaleY(-1);
+}
+.peoplePhoto img:nth-child(6) {
+    transform: translateY(25px) scaleY(-1); 
+}
+.peoplePhoto img:nth-child(7) {
+    transform: translateY(40px) scaleY(-1);
+}
+
+.reviews {
+    background-image: url(./img/Background_circles.svg);
+    background-repeat: no-repeat;
+    width: 100%;
+    text-align: center;
+    margin-top: 271px;
+}
+
+.reviews::before {
+    background-color: rgba(208, 204, 199, 0.1);
+}
+
+
+/* ЭКРАН СЕДЬМОЙ  */
+
+.timetable {
+    background-image: url(img/Background.svg);
+    background-repeat: no-repeat;
+    width: 1457px;
+    height: 1384px;
+    margin: 238px 145px;
+    color: white;
+}
+
+.timetable h2 {
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 160px;
+    margin: 26px 277px 0px 278px;
+}
+
+.openHours {
+    margin: 0px 390px 50px 391px;
+    width: 372px;
+    text-align: center;
+}
+
+.openHours h3 {
+    font-family: Poppins;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 80px;
+}
+
+.openHours p {
+    font-family: Poppins;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.special {
+    text-align: right;
+}
+
+.click {
+    display: flex;
+    gap: 23px;
+    margin: 0px 330px 80px 331px
+}
+
+/* ЭКРАН ВОСЬМОЙ  */
+
+.footer {
+  background-color: #3d2c23;
+  color: #fff;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contacts {
+  max-width: 250px;
+}
+
+.contacts .logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.contacts .logo p {
+  width: 40px;
+  height: 40px;
+  background-color: #f89c1c;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: bold;
+  margin-right: 10px;
+  font-size: 24px;
+}
+
+.contacts .logo span {
+  font-size: 18px;
+  color: #fff;
+}
+
+.contacts p {
+  color: #ccc;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.socialMedia i {
+  font-size: 20px;
+  margin-right: 15px;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.socialMedia i:hover {
+  color: #f89c1c; 
+}
+
+.page {
+  max-width: 200px;
+}
+
+.page h4 {
+  color: #f89c1c; 
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.page ul {
+  list-style: none;
+  padding: 0;
+}
+
+.page ul li {
+  color: #ccc; 
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.rights {
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+  color: #ccc;
+}
+
+.rights p {
+  font-size: 14px;
+  margin: 0;
+}
