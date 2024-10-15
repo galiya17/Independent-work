@@ -4,23 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Italian Cuisine</title>
+    <link rel="stylesheet" href="./style.css">
     <link href="https://fonts.cdnfonts.com/css/raleway-5" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/tinos" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="./package/swiper-bundle.min.css">
-    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <section class="homePage">
-        <div class="menu">
-            <nav class="navbar">
-                <div class="logo-container">
-                    <div class="circle">D</div>
-                    <span class="brand-name">
-                        Delizi<span class="highlight">oso</span>
-                    </span>
+        <div class="horizontalMenu">
+            <div class="logo-container">
+                <div class="circle-container">
+                    <span>D</span>
                 </div>
-                
+                <span class="brand-name">
+                    Delizi<span class="highlight">oso</span>
+                </span>
+            </div>
+            
             <ul class="navList">
                 <li><a href="#home" class="active">Home</a></li>
                 <li><a href="#menu">Menu</a></li>
@@ -29,19 +31,24 @@
                 <li><a href="#reservation">Reservation</a></li>
                 <li><a href="#contact us">Contact us</a></li>
             </ul>
-            <div class="cart">
-                <img src="./img/Cart.svg" alt="cart">
-                <p>3</p>
-            </div>
-            <div class="logIn">
-                <button class="green" onclick="lohIn_popUp">Log in</button>
-            </div>
-            </nav>
+            <div class="logoCart">
+                <div class="cart">
+                    <img src="./img/Cart.svg" alt="cart">
+                    <p>3</p>
+                </div>
+                <div class="hamburger">
+                    <img src="./img/Home.svg" alt="menu" class="menuIcon">
+                    <i class="closeIcon material-icons">close</i>
+                </div> 
+                <div class="logIn">
+                    <button class="green">Log in</button>
+                </div>
+            </div>   
         </div>
 
         <div class="cuisine">
             <div class="infoSide">
-                <span>Restauran</span>
+                <span>Restaurant</span>
                 <h1>Italian Cuisine</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sodales senectus dictum arcu sit tristique donec eget.</p>
                 <div class="order">
@@ -50,7 +57,9 @@
                 </div>
             </div>
             <div class="imgSide">
-                <img src="./img/Spaghetti.svg" alt="plate" class="plate">
+                <img src="./img/lettuce-leaf-left.svg" class="lettuce_left" alt="lettuce-leaf-left" >
+                <img src="./img/spaghetti-bolognese.svg" alt="plate" class="plate">
+                <img src="./img/lettuce-leaf-right.svg" class="lettuce_right" alt="lettuce-leaf-right" >
             </div>
         </div>
     </section>
@@ -61,7 +70,7 @@
                 <img src="./img/Salad.svg" alt="salad">
             </div>
             <div class="welcomeText">
-                <h2>Welcome to delizioso</h2>
+                <h2>Welcome to <span class="highlight">delizioso</span></h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis ultricies at eleifend proin. Congue nibh nulla malesuada ultricies nec quam </p>
                 <button class="orange">See our menu</button>
             </div>
@@ -78,180 +87,276 @@
             <button class="category">Drink</button>
         </div>
         
-    <div class="swiper">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="dish swiper-slide">
+                    <img src="./img/Spaghetti_menu.svg" alt="Spaghetti">
+                    <h3>Spaghetti</h3>
+                    <div class="ratings">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam. </p>
+                    <div class="price">
+                        <p>$12.05</p>
+                        <button class="orange">Order now</button>
+                    </div>
+                </div>
 
-        <div class="swiper-wrapper">
-            <div class="dish">
-                <img src="./img/Spaghetti_menu.svg" alt="Spaghetti">
-                <h3>Spaghetti</h3>
-                <div class="ratings">
-                    <span class="star" data-value="1">&#9733;</span>
-                    <span class="star" data-value="2">&#9733;</span>
-                    <span class="star" data-value="3">&#9733;</span>
-                    <span class="star" data-value="4">&#9733;</span>
-                    <span class="star" data-value="5">&#9733;</span>
+                <div class="dish swiper-slide">
+                    <img src="./img/Gnocchi.svg" alt="Gnocchi">
+                    <h3>Gnocchi</h3>
+                    <div class="ratings">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam. </p>
+                    <div class="price">
+                        <p>$12.05</p>
+                        <button class="orange">Order now</button>
+                    </div>
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam. </p>
-                <div class="price">
-                    <p>$12.05</p>
-                    <button class="orange">Order now</button>
-                </div>
-            </div>
 
-            <div class="dish">
-                <img src="./img/Gnocchi.svg" alt="Gnocchi">
-                <h3>Gnocchi</h3>
-                <div class="ratings">
-                    <span class="star" data-value="1">&#9733;</span>
-                    <span class="star" data-value="2">&#9733;</span>
-                    <span class="star" data-value="3">&#9733;</span>
-                    <span class="star" data-value="4">&#9733;</span>
-                    <span class="star" data-value="5">&#9733;</span>
+                <div class="dish swiper-slide">
+                    <img src="./img/Rovioli.svg" alt="Rovioli">
+                    <h3>Rovioli</h3>
+                    <div class="ratings">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam. </p>
+                    <div class="price">
+                        <p>$12.05</p>
+                        <button class="orange">Order now</button>
+                    </div>
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam. </p>
-                <div class="price">
-                    <p>$12.05</p>
-                    <button class="orange">Order now</button>
-                </div>
-            </div>
 
-            <div class="dish">
-                <img src="./img/Rovioli.svg" alt="Rovioli">
-                <h3>Rovioli</h3>
-                <div class="ratings">
-                    <span class="star" data-value="1">&#9733;</span>
-                    <span class="star" data-value="2">&#9733;</span>
-                    <span class="star" data-value="3">&#9733;</span>
-                    <span class="star" data-value="4">&#9733;</span>
-                    <span class="star" data-value="5">&#9733;</span>
+                <div class="dish swiper-slide">
+                    <img src="./img/Penne Alla Vodak.svg" alt="Penne Alla Vodak">
+                    <h3>Penne Alla Vodak</h3>
+                    <div class="ratings">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam. </p>
+                    <div class="price">
+                        <p>$12.05</p>
+                        <button class="orange">Order now</button>
+                    </div>
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam. </p>
-                <div class="price">
-                    <p>$12.05</p>
-                    <button class="orange">Order now</button>
-                </div>
-            </div>
 
-            <div class="dish">
-                <img src="./img/Penne Alla Vodak.svg" alt="Penne Alla Vodak">
-                <h3>Penne Alla Vodak</h3>
-                <div class="ratings">
-                    <span class="star" data-value="1">&#9733;</span>
-                    <span class="star" data-value="2">&#9733;</span>
-                    <span class="star" data-value="3">&#9733;</span>
-                    <span class="star" data-value="4">&#9733;</span>
-                    <span class="star" data-value="5">&#9733;</span>
+                <div class="dish swiper-slide">
+                    <img src="./img/Risoto.svg" alt="Risoto">
+                    <h3>Risoto</h3>
+                    <div class="ratings">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam. </p>
+                    <div class="price">
+                        <p>$12.05</p>
+                        <button class="orange">Order now</button>
+                    </div>
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam. </p>
-                <div class="price">
-                    <p>$12.05</p>
-                    <button class="orange">Order now</button>
-                </div>
-            </div>
 
-            <div class="dish">
-                <img src="./img/Risoto.svg" alt="Risoto">
-                <h3>Risoto</h3>
-                <div class="ratings">
-                    <span class="star" data-value="1">&#9733;</span>
-                    <span class="star" data-value="2">&#9733;</span>
-                    <span class="star" data-value="3">&#9733;</span>
-                    <span class="star" data-value="4">&#9733;</span>
-                    <span class="star" data-value="5">&#9733;</span>
+                <div class="dish swiper-slide">
+                    <img src="./img/Splitza Signature.svg" alt="Splitza Signature">
+                    <h3>Splitza Signature</h3>
+                    <div class="ratings">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam. </p>
+                    <div class="price">
+                        <p>$12.05</p>
+                        <button class="orange">Order now</button>
+                    </div>
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam. </p>
-                <div class="price">
-                    <p>$12.05</p>
-                    <button class="orange">Order now</button>
-                </div>
-            </div>
 
-            <div class="dish">
-                <img src="./img/Splitza Signature.svg" alt="Splitza Signature">
-                <h3>Splitza Signature</h3>
-                <div class="ratings">
-                    <span class="star" data-value="1">&#9733;</span>
-                    <span class="star" data-value="2">&#9733;</span>
-                    <span class="star" data-value="3">&#9733;</span>
-                    <span class="star" data-value="4">&#9733;</span>
-                    <span class="star" data-value="5">&#9733;</span>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam. </p>
-                <div class="price">
-                    <p>$12.05</p>
-                    <button class="orange">Order now</button>
-                </div>
-            </div>
+                <div class="dish swiper-slide">
+                    <img src="./img/Spaghetti_menu.svg" alt="Spaghetti">
+                    <h3>Spaghetti</h3>
+                    <div class="ratings">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam. </p>
+                    <div class="price">
+                        <p>$12.05</p>
+                        <button class="orange">Order now</button>
+                    </div>
+                </div> 
 
-            <div class="dish">
-                <img src="./img/Spaghetti_menu.svg" alt="Spaghetti">
-                <h3>Spaghetti</h3>
-                <div class="ratings">
-                    <span class="star" data-value="1">&#9733;</span>
-                    <span class="star" data-value="2">&#9733;</span>
-                    <span class="star" data-value="3">&#9733;</span>
-                    <span class="star" data-value="4">&#9733;</span>
-                    <span class="star" data-value="5">&#9733;</span>
+                <div class="dish swiper-slide">
+                    <img src="./img/Spaghetti_menu.svg" alt="Spaghetti">
+                    <h3>Spaghetti</h3>
+                    <div class="ratings">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam. </p>
+                    <div class="price">
+                        <p>$12.05</p>
+                        <button class="orange">Order now</button>
+                    </div>
+                </div> 
+
+                <div class="dish swiper-slide">
+                    <img src="./img/Spaghetti_menu.svg" alt="Spaghetti">
+                    <h3>Spaghetti</h3>
+                    <div class="ratings">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam. </p>
+                    <div class="price">
+                        <p>$12.05</p>
+                        <button class="orange">Order now</button>
+                    </div>
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam. </p>
-                <div class="price">
-                    <p>$12.05</p>
-                    <button class="orange">Order now</button>
+
+                <div class="dish swiper-slide">
+                    <img src="./img/Spaghetti_menu.svg" alt="Spaghetti">
+                    <h3>Spaghetti</h3>
+                    <div class="ratings">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam. </p>
+                    <div class="price">
+                        <p>$12.05</p>
+                        <button class="orange">Order now</button>
+                    </div>
+                </div>
+
+                <div class="dish swiper-slide">
+                    <img src="./img/Spaghetti_menu.svg" alt="Spaghetti">
+                    <h3>Spaghetti</h3>
+                    <div class="ratings">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam. </p>
+                    <div class="price">
+                        <p>$12.05</p>
+                        <button class="orange">Order now</button>
+                    </div>
+                </div>
+
+                <div class="dish swiper-slide">
+                    <img src="./img/Spaghetti_menu.svg" alt="Spaghetti">
+                    <h3>Spaghetti</h3>
+                    <div class="ratings">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam. </p>
+                    <div class="price">
+                        <p>$12.05</p>
+                        <button class="orange">Order now</button>
+                    </div>
                 </div>
             </div> 
+            <div class="paginationNav"> 
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+            </div>
         </div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-        <!-- If we need scrollbar -->
-        <div class="swiper-scrollbar"></div>
-    </div>
     </section>
 
     <section class="reservation">
-        <div class="reservationImg">
-            <img src="./img/Reservation_page.svg" alt="table">
-        </div>
-        <div class="reservationText">
-            <h2>Let's reserve a table</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis ultricies at eleifend proin. Congue nibh nulla malesuada ultricies nec quam </p>
-            <button class="orange">Reservation</button>
+        <div class="reservationList">
+            <div class="reservationImg">
+                <img src="./img/Reservation_page.svg" alt="table">
+            </div>
+            <div class="reservationText">
+                <h2>Let's reserve <span class="highlight">a table</span></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis ultricies at eleifend proin. Congue nibh nulla malesuada ultricies nec quam </p>
+                <button class="orange">Reservation</button>
+            </div>
         </div>
     </section>
 
-    <section class="chefInfo">
+    <section class="chefs">
         <h2>Our greatest chef</h2>
-        <div class="chefPhoto">
-            <div class="chefB">
+        <div class="grid-container">
+            <div class="chef-card">
                 <img src="./img/Chef Betran.svg" alt="Betran Komar">
                 <h3>Betran Komar</h3>
                 <p>Head chef</p>
             </div>
             
-            <div class="chefF">
+            <div class="chef-card">
                 <img src="./img/Chef Sauwi.svg" alt="Ferry Sauwi">
                 <h3>Ferry Sauwi</h3>
                 <p>Chef</p>
             </div>
 
-            <div class="chefI">
+            <div class="chef-card">
                 <img src="./img/Chef Iswan.svg" alt="Iswan Dracho">
                 <h3>Iswan Dracho</h3>
                 <p>Chef</p>
             </div>
+
+            <div class="chef-card">
+                <img src="./img/Chef Sauwi.svg" alt="Ferry Sauwi">
+                <h3>Ferry Sauwi</h3>
+                <p>Chef</p>
+            </div>
         </div>
+        <div class="viewButton">
         <button class="orange">View all</button>
+        </div>
     </section>
 
-    <section class="reviews">
+    <!-- <section class="reviews">
         <h2>Our customers say</h2>
+    <div class="centralBlock"></div>
         <img src="./img/Starla Virgoun.svg" alt="Starla Virgoun">
         <p>Financial advisor</p>
         <div class="citation">
         <h2>“</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis ultricies at eleifend proin. Congue nibh nulla malesuada ultricies nec quam </p>
-        <h2>“</h2>
+        <h2 class="close">“</h2>
         </div>
+    </div>
 
         <div class="peoplePhoto">
             <img src="./img/first.svg" alt="">
@@ -262,9 +367,9 @@
             <img src="./img/sixth.svg" alt="">
             <img src="./img/seventh.svg" alt="">
         </div>
-    </section>
+    </section> -->
 
-    <section class="timetable">
+    <!-- <section class="timetable">
         <h2>we are open from</h2>
         <div class="openHours">
             <h3>Monday-Sunday</h3>
@@ -276,9 +381,9 @@
             <button class="orange">Order now</button>
             <button class="white">Reservation</button>
         </div>
-    </section>
+    </section> -->
 
-    <section class="footer">
+    <!-- <section class="footer">
         <div class="contacts">
           <div class="logo">
             <p>D</p>
@@ -324,9 +429,81 @@
         <div class="rights">
           <p>Copyright © 2022 Delizioso</p>
         </div>
-      </section>
-      
-    <script src="./package/swiper-bundle.min.js"></script>
+      </section> -->
+
+    <div class="wrapper">
+        <div class="popUp">
+            <div class="circle">D</div>
+                <div class="form">
+                <p>Don't have an account? <a href="">Sign up</a></p>
+                <h3>Login</h3>
+                    <form action="">
+                    <input type="text" name="useremail" placeholder="Email address">
+                    <input type="text" name="userpassword" placeholder="Password">
+                    <label>
+                    <input type="checkbox">
+                    Remember  me
+                    </label>
+                    <p>Forget Password?</p>
+                    <button class="orange">Log in</button>
+                    <button class="white">
+                        <img src="./img/Google_icon.svg" alt="Google_icon">
+                        <p>Log in with google</p>
+                    </button>
+                    </form>
+                </div>                  
+        </div>
+            <div class="design">
+                <img src="./img/Login.svg" alt="Spaghetti">
+            </div>
+    </div>
+
+<section class="humburgerMenu">
+    <ul class="menu">
+        <li><a class="menuItem" href="#">Home</a></li>
+        <li><a class="menuItem" href="#">Menu</a></li>
+        <li><a class="menuItem" href="#">About us</a></li>
+        <li><a class="menuItem" href="#">Order online</a></li>
+        <li><a class="menuItem" href="#">Reservation</a></li>
+        <li><a class="menuItem" href="#">Contact us</a></li>
+    </ul>
+</section>
+
     <script src="./main.js"></script>
+    <script src="./package/swiper-bundle.min.js"></script>
+    
+    
+    <script>
+        const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  loop: false,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + (index + 1) + '</span>';
+        },
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  slidesPerView: 3,
+  spaceBetween: 10,
+
+  slidesPerGroup:3,
+
+  grid: {
+    rows: 2,
+    fill: 'row',
+  }
+});
+
+
+    </script>
 </body>
 </html>

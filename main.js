@@ -1,19 +1,47 @@
-/*
-const swiper = new Swiper('.swiper', {
-    direction: 'vertical',
-    loop: true,
+/* Pop Up */
+ 
+const wrapper = document.querySelector(".wrapper");
+const popUp = document.querySelector(".wrapper .popUp");
+const logInBiutton = document.querySelector(".logIn .green");
 
-    pagination: {
-      el: '.swiper-pagination',
-    },
+function showpopUp() {
+  wrapper.style.display = "flex"
+  popUp.style.display = "flex"
+}
 
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
+function hidepopUp() {
+  wrapper.style.display = "none"
+}
 
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
-  });
-  */
+logInBiutton.addEventListener('click', showpopUp);
+
+
+/* Burger Menu */
+
+  const menu = document.querySelector(".menu");
+  const menuItems = document.querySelectorAll(".menuItem");
+  const hamburger= document.querySelector(".hamburger");
+  const closeIcon= document.querySelector(".closeIcon");
+  const menuIcon = document.querySelector(".menuIcon");
+  
+  function toggleMenu() {
+    if (menu.classList.contains("showMenu")) {
+        menu.classList.remove("showMenu");
+        closeIcon.style.display = "none";
+        menuIcon.style.display = "block";
+    } else {
+        menu.classList.add("showMenu");
+        closeIcon.style.display = "block";
+        menuIcon.style.display = "none";
+    }
+}
+
+  hamburger.addEventListener("click", toggleMenu);
+  
+  menuItems.forEach( 
+    function(menuItem) { 
+      menuItem.addEventListener("click", toggleMenu);
+    }
+  )
+
+
